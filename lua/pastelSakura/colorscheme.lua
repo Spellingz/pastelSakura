@@ -1,4 +1,4 @@
-local config = require 'my-theme.config'
+local config = require 'pastelSakura.config'
 
 local colorscheme = {
   standardWhite = '#ffffff',
