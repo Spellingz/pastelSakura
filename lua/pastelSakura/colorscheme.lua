@@ -1,29 +1,29 @@
 local config = require 'pastelSakura.config'
 
 local colorscheme = {
-  standardWhite = '#ffffff',
-  standardBlack = '#1e1e1e',
+  standardWhite = '#ffbec8',
+  standardBlack = '#000000',
 }
 
 if vim.o.background == 'light' then
-  colorscheme.editorBackground = config.transparent and 'none' or '#ffffff'
-  colorscheme.sidebarBackground = '#dddddd'
-  colorscheme.popupBackground = '#f6f6f6'
-  colorscheme.floatingWindowBackground = '#e0e0e0'
-  colorscheme.menuOptionBackground = '#ededed'
+  colorscheme.editorBackground = config.transparent and 'none' or '#ffbec8' -- this one is the color i want the rest of the colors to be based on
+  colorscheme.sidebarBackground = '#00ff00'
+  colorscheme.popupBackground = '#ffb4b9'
+  colorscheme.floatingWindowBackground = '#ffb4b9'
+  colorscheme.menuOptionBackground = '#ffa0aa'
 
-  colorscheme.mainText = '#616161'
-  colorscheme.emphasisText = '#212121'
-  colorscheme.commandText = '#333333'
-  colorscheme.inactiveText = '#9e9e9e'
-  colorscheme.disabledText = '#d0d0d0'
-  colorscheme.lineNumberText = '#a1a1a1'
-  colorscheme.selectedText = '#424242'
-  colorscheme.inactiveSelectionText = '#757575'
+  colorscheme.mainText = '#784545'
+  colorscheme.emphasisText = '#a13b51'
+  colorscheme.commandText = '#00ff00'
+  colorscheme.inactiveText = '#895555'
+  colorscheme.disabledText = '#00ff00'
+  colorscheme.lineNumberText = '#996565'
+  colorscheme.selectedText = '#00ff00'
+  colorscheme.inactiveSelectionText = '#00ff00'
 
-  colorscheme.windowBorder = '#c2c3c5'
-  colorscheme.focusedBorder = '#aaaaaa'
-  colorscheme.emphasizedBorder = '#999999'
+  colorscheme.windowBorder = '#996565'
+  colorscheme.focusedBorder = '#00ff00'
+  colorscheme.emphasizedBorder = '#00ff00'
 
   colorscheme.syntaxFunction = '#6871ff'
   colorscheme.syntaxError = '#d6656a'
@@ -39,6 +39,44 @@ if vim.o.background == 'light' then
   colorscheme.syntaxOperator = '#a1a1a1'
   colorscheme.foregroundEmphasis = '#000000'
   colorscheme.terminalGray = '#333333'
+
+--  -- Base backgrounds
+--  colorscheme.editorBackground = config.transparent and 'none' or '#ffb6c1' -- this one is the color i want the rest of the colors to be based on
+--  colorscheme.sidebarBackground = '#FFDFE8' -- soft lighter pink for sidebars
+--  colorscheme.popupBackground = '#FFE9EE' -- very light pastel pink
+--  colorscheme.floatingWindowBackground = '#FFE0E6'
+--  colorscheme.menuOptionBackground = '#FFE6EB'
+--
+--  -- Text colors
+--  colorscheme.mainText = '#4B2C3A' -- darkish brown-pink
+--  colorscheme.emphasisText = '#2C1A26' -- darker for strong emphasis
+--  colorscheme.commandText = '#3A2030'
+--  colorscheme.inactiveText = '#9E7F8F'
+--  colorscheme.disabledText = '#D0B6C1'
+--  colorscheme.lineNumberText = '#A1828F'
+--  colorscheme.selectedText = '#5C3A4B'
+--  colorscheme.inactiveSelectionText = '#95768B'
+--
+--  -- Borders
+--  colorscheme.windowBorder = '#C2AFC0'
+--  colorscheme.focusedBorder = '#AA8CA6'
+--  colorscheme.emphasizedBorder = '#998399'
+--
+--  -- Syntax highlighting
+--  colorscheme.syntaxFunction = '#6871FF' -- slightly pastel violet-blue
+--  colorscheme.syntaxError = '#D6656A' -- muted coral
+--  colorscheme.syntaxKeyword = '#9966CC' -- soft purple
+--  colorscheme.errorText = '#D32F2F' -- strong red for errors
+--  colorscheme.warningText = '#F29718' -- warm yellow-orange
+--  colorscheme.linkText = '#1976D2' -- pastel blue links
+--  colorscheme.commentText = '#848484' -- muted gray
+--  colorscheme.stringText = '#DD8500' -- warm orange-pink
+--  colorscheme.successText = '#22863A' -- green for success
+--  colorscheme.warningEmphasis = '#CD9731' -- golden accent
+--  colorscheme.specialKeyword = '#800080' -- deep pastel purple
+--  colorscheme.syntaxOperator = '#A1A1A1' -- light gray for operators
+--  colorscheme.foregroundEmphasis = '#000000'
+--  colorscheme.terminalGray = '#333333'
 else
   colorscheme.editorBackground = config.transparent and 'none' or '#212121'
   colorscheme.sidebarBackground = '#1a1a1a'
